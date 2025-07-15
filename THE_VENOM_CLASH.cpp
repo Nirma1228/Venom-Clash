@@ -161,3 +161,22 @@ for (int k = 0; k < ntail2 && !print; k++) {
 // Display player names and scores
     cout << playerName1 << "'s Score: " << score1 << "\t\t" << playerName2 << "'s Score: " << score2 << endl;
 }
+
+/ Function to set up the initial state of the game
+void IniSetup (){
+	Gameover = false;					// Reset the game over flag
+	Dir1 = STOP;						// Set initial direction to STOP for Player 1	
+	X1 = Width /4;						// Set initial position for Player 1
+	Y1 = Height / 4;
+	fruitX = rand() % (Width - 2) + 1;	// Random position for the fruit
+	fruitY = rand() % (Height - 2) + 1;
+	score1 = 0;							// Set initial score for Player 1
+	ntail1 = 0;							// Set initial tail length for Player 1
+	
+	X2 = (Width / 4) * 3;				// Set initial position for Player 2
+	Y2 = (Height / 4) * 3;
+	Dir2 = STOP;						// Set initial direction to STOP for Player 2
+	ntail2 = 0;							// Set initial tail length for Player 2
+	score2 = 0;							// Set initial score for Player 2
+
+}
