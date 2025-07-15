@@ -317,3 +317,10 @@ void Logic (){
     	fruitX = rand() % (Width - 2) + 1;
     	fruitY = rand() % (Height - 2) + 1;
 	}
+
+// Logic for the second snake
+    int PrevX2 = tailX2[0];
+    int PrevY2 = tailY2[0];
+    int Prev2X2, Prev2Y2;
+    tailX2[0] = X2;
+    tailY2[0] = Y2;
