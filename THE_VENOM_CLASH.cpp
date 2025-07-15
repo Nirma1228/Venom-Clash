@@ -74,3 +74,27 @@ if (choice == 1) {
             cin >> playerName2;
             return;  // Start the game
         } else if (choice == 2) {
+system("cls");
+            cout << "INSTRUCTIONS:" << endl;
+            cout << endl;
+            cout << "01) It's a two players' Game which based on classical Snake Game" << endl;
+            cout << endl;
+            cout << "02) Player 1 (Snake denoted by O): W, A, S, D to move" << endl;
+            cout << "\t W - Move Up \t A - Move Left \t S - Move Down \t D - Move Right" << endl;
+            cout << endl;
+            cout << "03) Player 2 (Snake denoted by X): I, J, K, L to move" << endl;
+            cout << "\t I - Move Up \t J - Move Left \t K - Move Down \t L - Move Right" << endl;
+            cout << endl;
+            cout << "04) To Pause and Resume the game use key 'P'" << endl;
+            cout << endl;
+            cout << "05) To exit from the game use key 'Q'" << endl;
+            cout << endl;
+            cout << "06) Collect fruits(F) to grow" << endl;
+            cout << endl;
+            cout << "07) Avoid colliding with the other snake or yourself" << endl;
+            cout << endl;
+            cout << "08) If the head collides each other, the one with highest score wins, if both have same score it leads to Draw." << endl;
+            cout << endl;
+            cout << "09) Press any key to return to the main menu." << endl;
+            _getch();  // Wait for user input to go back to the menu
+        } else if (choice == 3) {
