@@ -109,3 +109,9 @@ system("cls");
 void Draw() {
     // Move the cursor to the top-left corner of the console
 	gotoxy (0,0);
+
+// Draw the top wall
+    for (int i = 0; i < Width + 2; i++) {
+        cout << "#";
+    }
+    cout << endl;
