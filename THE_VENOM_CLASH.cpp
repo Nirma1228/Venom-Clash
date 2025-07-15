@@ -27,3 +27,6 @@ int tailY2[100];
 int ntail2;                   	// Length of the second snake's tail
 Direction Dir2;              	// Direction of the second snake
 int score2;						// Score of the second snake
+
+string playerName1, playerName2; // Both Player's Name
+bool paused = false;
