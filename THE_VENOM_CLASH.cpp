@@ -334,3 +334,21 @@ void Logic (){
         PrevX2 = Prev2X2;
         PrevY2 = Prev2Y2;
     }
+
+// Movement of Player 2
+    switch (Dir2) {
+        case LEFT:
+            X2--;
+            break;
+        case RIGHT:
+            X2++;
+            break;
+        case UP:
+            Y2--;
+            break;
+        case DOWN:
+            Y2++;
+            break;
+        default:
+            break;
+    }
