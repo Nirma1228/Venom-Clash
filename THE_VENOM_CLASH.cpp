@@ -185,3 +185,8 @@ void IniSetup (){
 void Pause() {
     // Clear the console screen
     system("cls");
+
+// Display pause message
+    cout << "\n\n\t<<<<< Game Paused >>>>>\n";
+    cout << "\tPress 'P' to resume the game.";
+}
