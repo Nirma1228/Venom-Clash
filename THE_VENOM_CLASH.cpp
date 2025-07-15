@@ -39,3 +39,11 @@ void hideCursor() {
     cursorInfo.bVisible = false; // Hide the cursor
     SetConsoleCursorInfo(consoleHandle, &cursorInfo);
 }
+
+// Function to set the console cursor position
+void gotoxy(int x, int y) {
+    COORD coord;
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
