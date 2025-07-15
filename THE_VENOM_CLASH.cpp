@@ -287,3 +287,17 @@ void Logic (){
 /*if (X1 > Width - 1 || X1 < 0 || Y1 > Height - 1 || Y1 < 0){
 		Gameover = true;
 	}*/
+
+// Handle boundary wrapping for Player 1
+	if (X1 >= Width){
+		X1 = 0;
+	}
+	else if (X1 < 0){
+		X1 = Width - 1;
+	}
+	if (Y1 >= Height){
+		Y1 = 0;
+	}
+	else if (Y1 < 0){
+		Y1 = Height - 1;
+	}
