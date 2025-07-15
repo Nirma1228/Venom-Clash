@@ -74,7 +74,7 @@ void MainMenu() {
             cin >> playerName2;
             return;  // Start the game
         } else if (choice == 2) {
-system("cls");
+            system("cls");
             cout << "INSTRUCTIONS:" << endl;
             cout << endl;
             cout << "01) It's a two players' Game which based on classical Snake Game" << endl;
