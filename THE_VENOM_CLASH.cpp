@@ -157,3 +157,7 @@ for (int k = 0; k < ntail2 && !print; k++) {
         cout << "#";
     }
     cout << endl;
+
+// Display player names and scores
+    cout << playerName1 << "'s Score: " << score1 << "\t\t" << playerName2 << "'s Score: " << score2 << endl;
+}
