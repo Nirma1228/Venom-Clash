@@ -65,7 +65,7 @@ void MainMenu() {
         cout << "Enter your choice: ";
         cin >> choice;
 
-if (choice == 1) {
+        if (choice == 1) {
             cout << endl;
             cout << "Enter Player 1's Name: ";
             cin >> playerName1;
