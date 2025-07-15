@@ -98,3 +98,10 @@ system("cls");
             cout << "09) Press any key to return to the main menu." << endl;
             _getch();  // Wait for user input to go back to the menu
         } else if (choice == 3) {
+ exit(0);  // Exit the game
+        } else {
+            cout << "Invalid choice! Please try again." << endl;
+            _getch();  // Wait for user input before showing the menu again
+        }
+    }
+}
