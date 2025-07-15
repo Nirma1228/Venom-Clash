@@ -47,3 +47,20 @@ void gotoxy(int x, int y) {
     coord.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+
+// Function to display the main menu
+void MainMenu() {
+    int choice;
+    while (true) {
+        system("cls");  // Clear the console
+        cout << "=================================" << endl;
+        cout << "=================================" << endl;
+        cout << "======== THE VENOM CLASH ========" << endl;
+        cout << "=================================" << endl;
+        cout << "=================================" << endl;
+        cout << "\t1. Play" << endl;
+        cout << "\t2. Instructions" << endl;
+        cout << "\t3. Exit" << endl;
+        cout << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
