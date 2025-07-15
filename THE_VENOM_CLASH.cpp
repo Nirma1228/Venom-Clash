@@ -151,3 +151,9 @@ for (int k = 0; k < ntail2 && !print; k++) {
         }
         cout << endl;
     }
+
+ // Draw the bottom wall
+    for (int i = 0; i < Width + 2; i++) {
+        cout << "#";
+    }
+    cout << endl;
