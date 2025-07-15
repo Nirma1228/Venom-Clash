@@ -144,3 +144,10 @@ for (int k = 0; k < ntail2 && !print; k++) {
                         break;
                     }
                 }
+ if (!print) {
+                    cout << " "; 			// Empty space
+                }
+            }
+        }
+        cout << endl;
+    }
