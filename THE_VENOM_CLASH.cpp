@@ -283,3 +283,7 @@ void Logic (){
 		default:
 		break;
 	}
+
+/*if (X1 > Width - 1 || X1 < 0 || Y1 > Height - 1 || Y1 < 0){
+		Gameover = true;
+	}*/
