@@ -64,3 +64,13 @@ void MainMenu() {
         cout << endl;
         cout << "Enter your choice: ";
         cin >> choice;
+
+if (choice == 1) {
+            cout << endl;
+            cout << "Enter Player 1's Name: ";
+            cin >> playerName1;
+            cout << endl;
+            cout << "Enter Player 2's Name: ";
+            cin >> playerName2;
+            return;  // Start the game
+        } else if (choice == 2) {
