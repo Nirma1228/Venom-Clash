@@ -265,3 +265,21 @@ void Logic (){
 		PrevX = Prev2X;
 		PrevY = Prev2Y;
 	}
+
+// Move Player 1 based on direction
+	switch (Dir1){
+		case LEFT:
+		X1--;	
+		break;
+		case RIGHT:
+		X1++;
+		break;
+		case UP:
+		Y1--;
+		break;
+		case DOWN:
+		Y1++;
+		break;
+		default:
+		break;
+	}
