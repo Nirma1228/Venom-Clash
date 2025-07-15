@@ -352,3 +352,7 @@ void Logic (){
         default:
             break;
     }
+ // Check if the second snake collides with the walls
+    /*if (X2 > Width - 1 || X2 < 0 || Y2 > Height - 1 || Y2 < 0) {
+        Gameover = true;
+    }*/
