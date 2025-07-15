@@ -309,3 +309,11 @@ void Logic (){
 			winner = 2;
 		}
 	}
+
+// Check for fruit collision for Player 1
+	if (X1 == fruitX && Y1 == fruitY){
+		ntail1++;
+		score1 += 10;
+    	fruitX = rand() % (Width - 2) + 1;
+    	fruitY = rand() % (Height - 2) + 1;
+	}
