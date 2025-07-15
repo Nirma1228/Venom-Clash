@@ -136,3 +136,11 @@ void Draw() {
                         break;
                     }
                 }
+
+for (int k = 0; k < ntail2 && !print; k++) {
+                    if (tailX2[k] == j - 1 && tailY2[k] == i) {
+                        cout << "x"; 		// Player 2's tail
+                        print = true;
+                        break;
+                    }
+                }
