@@ -301,3 +301,11 @@ void Logic (){
 	else if (Y1 < 0){
 		Y1 = Height - 1;
 	}
+
+// Check for collision with Player 1's tail
+	for (int i=0; i < ntail1; i++){
+		if (tailX1[i] == X1 && tailY1[i] == Y1){
+			Gameover = true;
+			winner = 2;
+		}
+	}
