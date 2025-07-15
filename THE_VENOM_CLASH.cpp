@@ -105,3 +105,7 @@ system("cls");
         }
     }
 }
+
+void Draw() {
+    // Move the cursor to the top-left corner of the console
+	gotoxy (0,0);
