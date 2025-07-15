@@ -180,3 +180,8 @@ void IniSetup (){
 	score2 = 0;							// Set initial score for Player 2
 
 }
+
+// Function to display Pause Message
+void Pause() {
+    // Clear the console screen
+    system("cls");
