@@ -246,3 +246,22 @@ void Input (){
 	}
 	
 }
+
+/ Function to implement game logic
+void Logic (){
+	
+	// Logic for 1st Snake
+	int PrevX = tailX1[0];		// Previous position of Player 1's first tail segment
+	int PrevY = tailY1[0];
+	int Prev2X, Prev2Y;
+	tailX1[0] = X1;				// Update tail to follow the head
+	tailY1[0] = Y1;
+	
+	for (int i=1; i < ntail1; i++){
+		Prev2X = tailX1[i];
+		Prev2Y = tailY1[i];
+		tailX1[i] = PrevX;
+		tailY1[i] = PrevY;
+		PrevX = Prev2X;
+		PrevY = Prev2Y;
+	}
