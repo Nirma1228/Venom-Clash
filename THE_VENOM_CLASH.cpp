@@ -30,3 +30,12 @@ int score2;						// Score of the second snake
 
 string playerName1, playerName2; // Both Player's Name
 bool paused = false;
+
+// Function to hide the console cursor
+void hideCursor() {
+    HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_CURSOR_INFO cursorInfo;
+    GetConsoleCursorInfo(consoleHandle, &cursorInfo);
+    cursorInfo.bVisible = false; // Hide the cursor
+    SetConsoleCursorInfo(consoleHandle, &cursorInfo);
+}
