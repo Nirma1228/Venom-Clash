@@ -19,3 +19,11 @@ int tailY1[100];
 int score1;						// Score of the first snake
 int ntail1;						// Length of the first snake's tail`
 Direction Dir1;				// Direction of the first snake
+
+Player 2 (Snake 2) Variables
+int X2, Y2;                   	// Position of the second snake's head
+int tailX2[100];              	// Position of the second snake's tail
+int tailY2[100];
+int ntail2;                   	// Length of the second snake's tail
+Direction Dir2;              	// Direction of the second snake
+int score2;						// Score of the second snake
