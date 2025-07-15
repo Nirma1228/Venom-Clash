@@ -115,3 +115,24 @@ void Draw() {
         cout << "#";
     }
     cout << endl;
+
+// Draw the game field (sides and inside)
+    for (int i = 0; i < Height; i++) {
+        for (int j = 0; j < Width + 2; j++) {
+            if (j == 0 || j == Width + 1) {
+                cout << "#"; 				// Side walls
+            } else if (i == Y1 && j == X1 + 1) {
+                cout << "O"; 				// Player 1's head
+            } else if (i == Y2 && j == X2 + 1) {
+                cout << "X"; 				// Player 2's head
+            } else if (i == fruitY && j == fruitX + 1) {
+                cout << "F";				// Fruit
+            } else {
+                bool print = false;
+                for (int k = 0; k < ntail1; k++) {
+                    if (tailX1[k] == j - 1 && tailY1[k] == i) {
+                        cout << "o"; 		// Player 1's tail
+                        print = true;
+                        break;
+                    }
+                }
