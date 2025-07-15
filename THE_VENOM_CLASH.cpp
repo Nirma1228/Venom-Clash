@@ -324,3 +324,13 @@ void Logic (){
     int Prev2X2, Prev2Y2;
     tailX2[0] = X2;
     tailY2[0] = Y2;
+
+// Logic for tail to follow the head
+    for (int i = 1; i < ntail2; i++) {
+        Prev2X2 = tailX2[i];
+        Prev2Y2 = tailY2[i];
+        tailX2[i] = PrevX2;
+        tailY2[i] = PrevY2;
+        PrevX2 = Prev2X2;
+        PrevY2 = Prev2Y2;
+    }
