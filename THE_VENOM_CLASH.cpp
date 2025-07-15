@@ -190,3 +190,59 @@ void Pause() {
     cout << "\n\n\t<<<<< Game Paused >>>>>\n";
     cout << "\tPress 'P' to resume the game.";
 }
+
+// Function to handle player input
+void Input (){
+	
+	if (_kbhit()){		// Check if a key is pressed
+		switch(_getch()){
+			
+			case 'a':
+				if (Dir1 != RIGHT)		// Ensure that the Player 1's snake not going on right to avoid going back in it's direction of coming
+					Dir1 = LEFT;		// Player 1 moves left
+				break;
+			case 'd':
+				if (Dir1 != LEFT)		// Ensure that the Player 1's snake not going on right to avoid going back in it's direction of coming
+					Dir1 = RIGHT;		// Player 1 moves right
+				break;
+			case 'w':
+				if (Dir1 != DOWN)		// Ensure that the Player 1's snake not going on right to avoid going back in it's direction of coming
+					Dir1 = UP;			// Player 1 moves up
+				break;
+			case 's':
+				if (Dir1 != UP)			// Ensure that the Player 1's snake not going on right to avoid going back in it's direction of coming
+					Dir1 = DOWN;		// Player 1 moves down
+				break;
+				
+			case 'j':
+				if (Dir2 != RIGHT)		// Ensure that the Player 2's snake not going on right to avoid going back in it's direction of coming
+                	Dir2 = LEFT;		// Player 2 moves left
+                break;
+            case 'l':
+            	if (Dir2 != LEFT)		// Ensure that the Player 2's snake not going on right to avoid going back in it's direction of coming
+                	Dir2 = RIGHT;		// Player 2 moves right
+                break;
+            case 'i':
+            	if (Dir2 != DOWN)		// Ensure that the Player 2's snake not going on right to avoid going back in it's direction of coming
+                	Dir2 = UP;			// Player 2 moves up
+                break;
+            case 'k':
+            	if (Dir2 != UP)			// Ensure that the Player 2's snake not going on right to avoid going back in it's direction of coming
+                	Dir2 = DOWN;		// Player 2 moves down
+                break;	
+            case 'p':
+                paused = !paused;
+                if (paused) {
+                    Pause();  // Display pause message and clear the screen
+                } else {
+                    Draw();  // Redraw the game screen when resuming
+                }
+                break;
+            case 'q':
+                Gameover = true;
+                winner = 0;
+                break;
+		}
+	}
+	
+}
