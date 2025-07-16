@@ -356,3 +356,59 @@ void Logic (){
     /*if (X2 > Width - 1 || X2 < 0 || Y2 > Height - 1 || Y2 < 0) {
         Gameover = true;
     }*/
+
+if (X2 >= Width){
+		X2 = 0;
+	}
+	else if (X2 < 0){
+		X2 = Width - 1;
+	}
+	if (Y2 >= Height){
+		Y2 = 0;
+	}
+	else if (Y2 < 0){
+		Y2 = Height - 1;
+	}
+	
+    // Check if the second snake collides with itself or the other snake
+    for (int i = 0; i < ntail2; i++) {
+        if (tailX2[i] == X2 && tailY2[i] == Y2) {
+            Gameover = true;
+            winner = 1;
+        }
+    }
+    for (int i = 0; i < ntail1; i++) {
+        if (tailX1[i] == X1 && tailY1[i] == Y1) {
+            Gameover = true;
+            winner = 1;
+        }
+    }
+    // Fruit collision for second snake
+	if (X2 == fruitX && Y2 == fruitY) {
+    	ntail2++;
+    	score2 += 10;  // Increase player 2's score
+    	fruitX = rand() % (Width - 2) + 1;
+    	fruitY = rand() % (Height - 2) + 1;
+	}
+	
+	// Check if the heads of the two snakes collide
+	if (X1 == X2 && Y1 == Y2) {
+		if (score1 > score2) {
+       		winner = 1;
+    	} 
+		else if (score2 > score1) {
+        	winner = 2;
+    	} 
+		else if (score1 == score2){
+    	    winner = 0; // Draw if scores are equal
+    	}
+	Gameover = true;
+	}
+    
+    // Check if player 1 touches player 2's snake
+	for (int i = 0; i < ntail2; i++) {
+    	if (X1 == tailX2[i] && Y1 == tailY2[i]) {
+        	winner = 2;
+        	Gameover = true;
+    	}
+	}
