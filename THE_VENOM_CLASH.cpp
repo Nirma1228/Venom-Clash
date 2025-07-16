@@ -108,9 +108,9 @@ void MainMenu() {
 
 void Draw() {
     // Move the cursor to the top-left corner of the console
-	gotoxy (0,0);
+    gotoxy (0,0);
 
-// Draw the top wall
+   // Draw the top wall
     for (int i = 0; i < Width + 2; i++) {
         cout << "#";
     }
@@ -137,7 +137,7 @@ void Draw() {
                     }
                 }
 
-for (int k = 0; k < ntail2 && !print; k++) {
+                 for (int k = 0; k < ntail2 && !print; k++) {
                     if (tailX2[k] == j - 1 && tailY2[k] == i) {
                         cout << "x"; 		// Player 2's tail
                         print = true;
