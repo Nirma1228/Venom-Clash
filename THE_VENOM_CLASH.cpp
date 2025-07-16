@@ -136,7 +136,6 @@ void Draw() {
                         break;
                     }
                 }
-
                  for (int k = 0; k < ntail2 && !print; k++) {
                     if (tailX2[k] == j - 1 && tailY2[k] == i) {
                         cout << "x"; 		// Player 2's tail
@@ -144,7 +143,7 @@ void Draw() {
                         break;
                     }
                 }
- if (!print) {
+                if (!print) {
                     cout << " "; 			// Empty space
                 }
             }
@@ -152,17 +151,17 @@ void Draw() {
         cout << endl;
     }
 
- // Draw the bottom wall
+    // Draw the bottom wall
     for (int i = 0; i < Width + 2; i++) {
         cout << "#";
     }
     cout << endl;
 
-// Display player names and scores
+  // Display player names and scores
     cout << playerName1 << "'s Score: " << score1 << "\t\t" << playerName2 << "'s Score: " << score2 << endl;
 }
 
-/ Function to set up the initial state of the game
+// Function to set up the initial state of the game
 void IniSetup (){
 	Gameover = false;					// Reset the game over flag
 	Dir1 = STOP;						// Set initial direction to STOP for Player 1	
