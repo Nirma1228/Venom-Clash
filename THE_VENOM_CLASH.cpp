@@ -453,3 +453,34 @@ int main (){
 		Sleep(90);
 	}
 }
+
+// Clear the console screen
+    system("cls");
+
+    // Display Game Over message
+    cout << "\n\n\n";
+    cout << "*******************************************" <<endl;
+    cout << "*******************************************" <<endl;
+    cout << "****************Game Over!*****************" << endl;
+    cout << "*******************************************" <<endl;
+    cout << "*******************************************" <<endl;
+    cout << endl;
+    
+    if (winner == 1) {
+        cout << "\t<<<<< " << playerName1 << " wins! >>>>>" << endl;
+    } 
+	else if (winner == 2) {
+        cout << "\t<<<<< " << playerName2 << " wins! >>>>>" << endl;
+    } 
+	else if (winner == 0){
+        cout << "\t<<<<<  It's a draw!  >>>>>" << endl;
+    }
+    cout << endl;
+    cout << "Press any key to return to the main menu...";
+    
+    _getch();  // Wait for user input to return to the main menu
+
+    main();  // Restart the game by calling the main function again
+	
+	return 0;
+}
