@@ -412,3 +412,12 @@ if (X2 >= Width){
         	Gameover = true;
     	}
 	}
+
+// Check if player 2 touches player 1's snake
+	for (int i = 0; i < ntail1; i++) {
+    	if (X2 == tailX1[i] && Y2 == tailY1[i]) {
+        	winner = 1;
+        	Gameover = true;
+    	}
+	}
+}
