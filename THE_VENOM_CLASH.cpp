@@ -420,4 +420,36 @@ if (X2 >= Width){
         	Gameover = true;
     	}
 	}
+
+	// Function to display the control instructions
+void displayControls() {
+    // Position the cursor where you want the instructions to appear
+    gotoxy(0, 0); // Adjust the coordinates as needed
+    
+    // Display control instructions
+    cout << endl;
+    cout << endl;
+    cout << "\t\t\t\t\t\t"<< "Controls:" << endl;
+    cout << "\t\t\t\t\t\t"<< "Player 1 (Arrow keys): W- Up, A- Left, S- Down, D- Right" << endl;
+    cout << "\t\t\t\t\t\t"<< "Player 2 (Arrow Keys): I- Up, J- Left, K- Down, L- Right" << endl;
+    cout << "\t\t\t\t\t\t"<< "P - Pause" << endl;
+    cout << "\t\t\t\t\t\t"<< "Q - Quit" << endl;
+}
+
+int main (){
+	hideCursor();  // Hide the console cursor
+	MainMenu();
+	
+	IniSetup ();
+    
+	while (!Gameover){
+		if (!paused) {
+            Draw();
+            Logic();            // Only update game logic if the game is not paused
+            displayControls();	// Display the controls before the game loop starts
+        }
+		Input();
+
+		Sleep(90);
+	}
 }
