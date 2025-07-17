@@ -21,3 +21,8 @@ _______________________________________________
 | Both   | P          | Pause/Resume          |
 | Both   | Q          | Quit Game             |
 |_____________________________________________|
+
+## 🛠 Built With
+- C++
+- Windows console
+- `<iostream>`, `<conio.h>`, `<windows.h>`, `<cstdlib>`
