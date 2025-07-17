@@ -38,3 +38,6 @@ Game Interface
 
 ![Game](https://github.com/user-attachments/assets/715fa3fc-62a5-4a06-a737-0cda8a72ae64)
 
+## Main Menu ##
+
+![main menue](https://github.com/user-attachments/assets/f5670052-ac0f-4f30-9ff9-74c2f13b48da)
