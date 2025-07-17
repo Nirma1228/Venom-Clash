@@ -15,7 +15,7 @@ In "The Venom Clash", two players control separate snakes and compete to eat fru
 
 _______________________________________________
 | Player | Keys       | Action                |
-|--------|------------|---------------        |
+|--------|------------|-----------------------|
 | P1     | W A S D    | Up, Left, Down, Right |
 | P2     | I J K L    | Up, Left, Down, Right |
 | Both   | P          | Pause/Resume          |
