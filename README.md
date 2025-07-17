@@ -26,3 +26,9 @@ _______________________________________________
 - C++
 - Windows console
 - `<iostream>`, `<conio.h>`, `<windows.h>`, `<cstdlib>`
+
+
+## 🚀 How to Run
+1. Open the `.cpp` file in Code::Blocks or Visual Studio.
+2. Build the project.
+3. Run in a Windows command prompt terminal.
