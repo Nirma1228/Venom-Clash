@@ -32,3 +32,9 @@ _______________________________________________
 1. Open the `.cpp` file in Code::Blocks or Visual Studio.
 2. Build the project.
 3. Run in a Windows command prompt terminal.
+
+## Screenshots ##
+Game Interface
+
+![Game](https://github.com/user-attachments/assets/715fa3fc-62a5-4a06-a737-0cda8a72ae64)
+
