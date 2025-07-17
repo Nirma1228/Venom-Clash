@@ -10,3 +10,14 @@ A competitive two-player twist on the classic Snake game, developed in C++.
 
 ## 📋 Description
 In "The Venom Clash", two players control separate snakes and compete to eat fruits, grow, and outmaneuver each other. The game is played on the console and includes features like pausing, collision detection, and real-time controls.
+
+## 🎮 Controls
+
+_______________________________________________
+| Player | Keys       | Action                |
+|--------|------------|---------------        |
+| P1     | W A S D    | Up, Left, Down, Right |
+| P2     | I J K L    | Up, Left, Down, Right |
+| Both   | P          | Pause/Resume          |
+| Both   | Q          | Quit Game             |
+|_____________________________________________|
