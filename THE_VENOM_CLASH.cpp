@@ -13,11 +13,11 @@ enum Direction { STOP = 0, LEFT, RIGHT, UP, DOWN};	//Directions of the Snake
 int winner = 0;  				// 0 means no winner yet, 1 means player 1 wins, 2 means player 2 wins
 
 // Player 1 (Snake 1) Variables
-int X1, Y1;						//Position of the first snake's head
-int tailX1[100];				// Position of the first snake's head
+int X1, Y1;				//Position of the first snake's head
+int tailX1[100];			// Position of the first snake's head
 int tailY1[100];
-int score1;						// Score of the first snake
-int ntail1;						// Length of the first snake's tail`
+int score1;				// Score of the first snake
+int ntail1;				// Length of the first snake's tail`
 Direction Dir1;				// Direction of the first snake
 
 Player 2 (Snake 2) Variables
@@ -26,7 +26,7 @@ int tailX2[100];              	// Position of the second snake's tail
 int tailY2[100];
 int ntail2;                   	// Length of the second snake's tail
 Direction Dir2;              	// Direction of the second snake
-int score2;						// Score of the second snake
+int score2;			// Score of the second snake
 
 string playerName1, playerName2; // Both Player's Name
 bool paused = false;
@@ -144,7 +144,7 @@ void Draw() {
                     }
                 }
                 if (!print) {
-                    cout << " "; 			// Empty space
+                    cout << " "; 		// Empty space
                 }
             }
         }
@@ -167,7 +167,7 @@ void IniSetup (){
 	Dir1 = STOP;						// Set initial direction to STOP for Player 1	
 	X1 = Width /4;						// Set initial position for Player 1
 	Y1 = Height / 4;
-	fruitX = rand() % (Width - 2) + 1;	// Random position for the fruit
+	fruitX = rand() % (Width - 2) + 1;	                // Random position for the fruit
 	fruitY = rand() % (Height - 2) + 1;
 	score1 = 0;							// Set initial score for Player 1
 	ntail1 = 0;							// Set initial tail length for Player 1
