@@ -4,7 +4,7 @@ A competitive two-player twist on the classic Snake game, developed in C++.
 
 ## 👨‍💻 Team Members
 - IM/2022/050 – Bandara B.M.N.N
-- 2022/089 – Disara P.K.D
+- 2022/089 – D
 
 
 ## 📋 Description
