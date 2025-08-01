@@ -1,11 +1,11 @@
-# 🎮 The Venom Clash - Two Player Snake Game
+#  The Venom Clash - Two Player Snake Game
 
 A competitive two-player twist on the classic Snake game, developed in C++.
 
-## 📋 Description
+##  Description
 In "The Venom Clash", two players control separate snakes and compete to eat fruits, grow, and outmaneuver each other. The game is played on the console and includes features like pausing, collision detection, and real-time controls.
 
-## 🎮 Controls
+##  Controls
 
 _______________________________________________
 | Player | Keys       | Action                |
@@ -22,12 +22,12 @@ _______________________________________________
 - `<iostream>`, `<conio.h>`, `<windows.h>`, `<cstdlib>`
 
 
-## 🚀 How to Run
+##  How to Run
 1. Open the `.cpp` file in Code::Blocks or Visual Studio.
 2. Build the project.
 3. Run in a Windows command prompt terminal.
 
-## 📷 Screenshots ##
+##  Screenshots ##
 Game Interface
 
 ![Game](https://github.com/user-attachments/assets/715fa3fc-62a5-4a06-a737-0cda8a72ae64)
